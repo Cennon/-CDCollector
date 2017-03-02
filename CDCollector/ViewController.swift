@@ -8,11 +8,42 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var tableView: UITableView!
+    
+    var discs : [CD] = []
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do {
+        discs = try context.fetch(CD.fetchRequest())
+            tableView.reloadData()
+        } catch {
+            
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return discs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        let disc = discs[indexPath.row]
+        cell.textLabel?.text = disc.title
+        cell.imageView?.image = UIImage(data: disc.image as! Data)
+        
+        return cell
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        tableView.dataSource = self
+        tableView.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {

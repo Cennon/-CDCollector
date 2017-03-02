@@ -13,6 +13,8 @@
 		9D5A40A71E60D7B900B30232 /* CDCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A40A51E60D7B900B30232 /* CDCollector.xcdatamodeld */; };
 		9D5A40A91E60D7B900B30232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A40A81E60D7B900B30232 /* Assets.xcassets */; };
 		9D5A40AC1E60D7B900B30232 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A40AA1E60D7B900B30232 /* LaunchScreen.storyboard */; };
+		9DEAFD611E668344007422FE /* City To City.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAFD601E668344007422FE /* City To City.png */; };
+		9DEAFD631E6684A5007422FE /* CDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFD621E6684A5007422FE /* CDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9D5A40A81E60D7B900B30232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D5A40AB1E60D7B900B30232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D5A40AD1E60D7B900B30232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DEAFD601E668344007422FE /* City To City.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "City To City.png"; sourceTree = "<group>"; };
+		9DEAFD621E6684A5007422FE /* CDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		9D5A409D1E60D7B900B30232 /* CDCollector */ = {
 			isa = PBXGroup;
 			children = (
+				9DEAFD601E668344007422FE /* City To City.png */,
 				9D5A409E1E60D7B900B30232 /* AppDelegate.swift */,
 				9D5A40A01E60D7B900B30232 /* ViewController.swift */,
 				9D5A40A21E60D7B900B30232 /* Main.storyboard */,
+				9DEAFD621E6684A5007422FE /* CDViewController.swift */,
 				9D5A40A81E60D7B900B30232 /* Assets.xcassets */,
 				9D5A40AA1E60D7B900B30232 /* LaunchScreen.storyboard */,
 				9D5A40AD1E60D7B900B30232 /* Info.plist */,
@@ -127,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEAFD611E668344007422FE /* City To City.png in Resources */,
 				9D5A40AC1E60D7B900B30232 /* LaunchScreen.storyboard in Resources */,
 				9D5A40A91E60D7B900B30232 /* Assets.xcassets in Resources */,
 				9D5A40A41E60D7B900B30232 /* Main.storyboard in Resources */,
@@ -143,6 +150,7 @@
 				9D5A40A11E60D7B900B30232 /* ViewController.swift in Sources */,
 				9D5A40A71E60D7B900B30232 /* CDCollector.xcdatamodeld in Sources */,
 				9D5A409F1E60D7B900B30232 /* AppDelegate.swift in Sources */,
+				9DEAFD631E6684A5007422FE /* CDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +314,7 @@
 				9D5A40B21E60D7B900B30232 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
